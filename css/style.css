@@ -1,5 +1,5 @@
-body {
-    background-color: ;
+#IT {
+    font-family: 'Audiowide', cursive;
 }
 
 #home {
@@ -57,4 +57,14 @@ form {
 #submitbtn {
     margin-left: 25%;
     width: 50%;    
+}
+
+#footer {
+    background-color: black; 
+    color: #A6A6A6;
+}
+
+#footer p {
+    padding-top: 4%;
+    padding-bottom: 4%;
 }
