@@ -13,7 +13,7 @@
         <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container-fluid">
                 <!-- Information Technology logo with cursor blinker -->
-                <a href="https://en.wikipedia.org/wiki/Information_technology" class="navbar-brand">Information Technology <span id="blinker">|</span></a>
+                <a href="https://en.wikipedia.org/wiki/Information_technology" target="_blank" class="navbar-brand">Information Technology <span id="blinker">|</span></a>
                 <!-- Home link -->
                 <ul class="list-unstyled nav navbar-nav navbar-right">
                     <li><a href="#home">Home</a></li>
@@ -44,21 +44,21 @@
             </div>
             <div class="row text-center">
                 <div class="col-md-4 well">
-                    <i class="glyphicon glyphicon-education"></i>
+                    <i class="glyphicon glyphicon-education gly-about"></i>
                     <h4>B.S. Information Technology</h4>
-                    <p>Currently a SCIS (School of Computing and Information Sciences) student at <a href="http://www.cis.fiu.edu/" target="_blank">FIU</a> with a minor in Social Media and E-Marketing Analytics. I will be enrolling in specific IT elective courses: database administration and application development. Depending on my course load, I will be graduating Summer 2015/Fall 2016.</p>
+                    <p>Currently a SCIS (School of Computing and Information Sciences) student at <a href="http://www.cis.fiu.edu/" target="_blank">FIU</a> with a minor in Social Media and E-Marketing Analytics. I will be enrolling in specific IT elective courses: database administration and application development. Depending on my course load, I will be graduating Summer 2016/Fall 2016.</p>
                     
                 </div>
                 <div class="col-md-4 well">
-                    <i class="glyphicon glyphicon-ok-circle"></i>
+                    <i class="glyphicon glyphicon-ok-circle gly-about"></i>
                     <h4>Full-stack Web Dev</h4>
-                    <p>With my interest in JavaScript at an all time high, my long-term goals are to become familiar with the broader spectrum of web development. I will soon delve into Node.js thus allowing me to be proficient with the MEAN stack.</p>
+                    <p>With an interest in JavaScript at an all time high, my long-term goals are to become familiar with the broader spectrum of web development. I will soon delve into Node.js thus allowing me to begin my journey with the <a href="http://mean.io/#!/" target="_blank">MEAN</a> stack.</p>
                 
                 </div>
                 <div class="col-md-4 well">
-                    <i class="glyphicon glyphicon-road"></i>
+                    <i class="glyphicon glyphicon-road gly-about"></i>
                     <h4>WebVR</h4>
-                    <p>With the advacement of technologies such as WebGL, I am a firm believer that the next "Big Thing" in computing will be the rise of immersion technologies such as <em>Virtual Reality</em> and its implementation into the web <a href="https://www.youtube.com/watch?v=1F2XlVwOE-0" target="_blank">(WebVR)</a>. With 2016 being the dedicated year for the consumer release of VR HMD's, I plan to learn as much as possible surrounding this new facet of technology. <br><br> <a href="http://webvr.info/" target="_blank">More Info</a></p> 
+                    <p>With the advacement of technologies such as WebGL, I am a firm believer that the next "Big Thing" in computing will be the rise of immersion technologies such as <em>Virtual Reality</em> and its implementation into the web <a href="http://webvr.info/" target="_blank">(WebVR)</a>. With 2016 as the dedicated year for the consumer release of VR HMD's, I plan to learn about this new facet of technology. <br> <a href="https://www.youtube.com/watch?v=1F2XlVwOE-0" target="_blank"><strong>More Info</strong></a></p> 
                 
                 </div>
             </div>
@@ -66,9 +66,46 @@
         
         <!-- Start of Contact Me section -->
         <div class="container-fluid" id="contact">
-        
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Contact Me</h4>
+                    <p>Need to contact me for any advice on how to get started with web development, computer programming or information about my degree? Need an intern at your company? Please contact me through the form you see here.</p>
+                </div>
+                <div class="col-md-6">
+                    <!-- TODO: Create and program personal.php script -->
+                    <form action="personal.php" method="post">
+                        <div class="form-group">
+                            <!-- Full Name -->
+                            <label for="fullname">Full Name</label>
+                            <input type="text" name="fullName" id="fullname" class="form-control" placeholder="Full Name e.g. John Doe" required><br>
+                            <!-- Email -->
+                            <label for="email">E-Mail</label>
+                            <input type="text" name="email" id="email" class="form-control" placeholder="Email Address e.g. example@gmail.com"><br>
+                            
+                            <!-- Phone Number -->
+                            <label for="phone">Phone Number</label>
+                            <input type="text" name="phone" id="phone" class="form-control" placeholder="Phone Number"><br>
+                            
+                            <!-- Message to send -->
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" class="form-control" placeholder="Message to send." required></textarea>
+                        </div>
+                        <!-- TODO: might need to change the value of button to input incase of form bug. -->
+                        <button type="submit" value="Submit" id="submitbtn" class="btn btn-primary"><i class="glyphicon glyphicon-send"></i> Submit</button>
+                    </form>
+                </div>
+            </div>
         </div>
-        
+        <footer class="container-fluid" id="footer">
+            <div class="row">
+                <div class="col-md-4">
+                
+                </div>
+                <div class="col-md-4 col-md-offset-4">
+                
+                </div>
+            </div>
+        </footer>
         
         <script src="js/jquery-1.11.3.js"></script>
         <script src="bootstrap/js/bootstrap.js"></script>

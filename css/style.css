@@ -1,3 +1,20 @@
+body {
+    background-color: ;
+}
+
+#home {
+    background: url("https://newevolutiondesigns.com/images/freebies/black-wallpaper-30.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    margin-bottom: 5%;
+}
+
 #linkedin {
     background-color: #1975FF;
     border-radius: 20px;
@@ -7,11 +24,37 @@
     padding: 10px 25px;
 }
 
-#home {
-    margin-top: 10%;
+#linkedin:hover {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    
+}
+
+#contact {
+    background-color: #B22400;
+    color: white;
+}
+
+h1 {
+    margin-top: 5%; 
     margin-bottom: 5%;
 }
 
-.glyphicon {
+h2 {
+    margin-bottom: 40px;   
+}
+
+.gly-about {
     font-size: 30px;   
+}
+
+form {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#submitbtn {
+    margin-left: 25%;
+    width: 50%;    
 }
