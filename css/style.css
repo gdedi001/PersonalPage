@@ -1,9 +1,38 @@
 #IT {
-    font-family: 'Audiowide', cursive;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+}
+
+#blinker {
+    width: 2.5px;
+    height: 21px;
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: -10px;
+    background-color: none;
+    -webkit-animation-name: blink; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: infinite; /* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: infinite;
+    animation-name: blink;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes blink {
+    from {background-color: black;}
+    to {background-color: white;}
+}
+
+/* Standard syntax */
+@keyframes blink {
+    from {background-color: black;}
+    to {background-color: white;}
 }
 
 #home {
-    background: url("https://newevolutiondesigns.com/images/freebies/black-wallpaper-30.jpg") no-repeat center center fixed; 
+    background: url("http://theartmad.com/wp-content/uploads/2015/02/Geometric-Wallpaper-Gray-38.jpg") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -49,6 +78,10 @@ h2 {
     font-size: 30px;   
 }
 
+#contacthead {
+    font-size: 25px;   
+}
+
 form {
     margin-top: 15px;
     margin-bottom: 15px;
@@ -65,6 +98,6 @@ form {
 }
 
 #footer p {
-    padding-top: 4%;
-    padding-bottom: 4%;
+    padding-top: 3%;
+    padding-bottom: 2%;
 }
