@@ -7,12 +7,15 @@
         <!-- TODO: Change file to production ready -->
         <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
         <link href='http://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
         <link href="css/style.css" rel="stylesheet">
     </head>
     
     <body data-spy="scroll" data-target=".navbar" data-offset="20">
         
-        <!-- Navbar -->
+        <!-- Navbar (inverse color, fixed at top of page -->
         <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container-fluid">
                 <!-- Information Technology logo with cursor blinker -->
@@ -30,8 +33,8 @@
         <div class="container-fluid" id="home">
             <div class="row text-center">
                 <div class="col-md-12">
-                    <h1>Hi, My Name is Gabriel.</h1>
-                    <h2>COLLEGE STUDENT | WEB DEVELOPER</h2>
+                    <h1 id="name">Hi, My Name is Gabriel.</h1>
+                    <h2 id="greeting">COLLEGE STUDENT | <span style="color: gold;">WEB DEVELOPER</span></h2>
                     <a id="linkedin" href="https://linkedin.com/in/dediegog" target="_blank">LinkedIn</a>
                 </div>
             </div>
@@ -48,7 +51,7 @@
                 <div class="col-md-4 well">
                     <i class="glyphicon glyphicon-education gly-about"></i>
                     <h4>B.S. Information Technology</h4>
-                    <p>Currently a SCIS (School of Computing and Information Sciences) student at <a href="http://www.cis.fiu.edu/" target="_blank">FIU</a> with a minor in Social Media and E-Marketing Analytics. I will be enrolling in specific IT elective courses: database administration and application development. Depending on my course load, I will be graduating Summer 2016/Fall 2016.</p>
+                    <p>Currently a SCIS (School of Computing and Information Sciences) student at <a href="http://www.fiu.edu/" target="_blank">FIU</a> with a minor in Social Media and E-Marketing Analytics. I will be enrolling in specific IT elective courses: database administration and application development. Depending on my course load, I will be graduating Summer 2016/Fall 2016.</p>
                     
                 </div>
                 <div class="col-md-4 well">
@@ -71,7 +74,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <h4 id="contacthead"><strong>Contact Me</strong></h4>
-                    <p>Need to contact me for any advice on how to get started with <em>web development</em>, <em>computer programming</em> or any other information? Need an intern at your company? Please contact me through the form you see here.</p>
+                    <p id="contactdesc">Need to contact me for any advice on how to get started with <em>web development</em>, <em>computer programming</em> or any other information? Need an intern at your company? Please contact me through the form you see here.</p>
                 </div>
                 <div class="col-md-6">
                     <!-- TODO: Create and program personal.php script -->
@@ -101,7 +104,7 @@
         <footer class="container-fluid" id="footer">
             <div class="row">
                 <div class="col-md-4">
-                    <p>Gabriel de Diego<br>Email: gdedi001@fiu.edu<br>Phone: (786) 488-7734</p>
+                    <p>Gabriel de Diego<br>Florida International University<br>Phone: (786) 488-7734</p>
                 
                 </div>
                 <div class="col-md-4 col-md-offset-4">
