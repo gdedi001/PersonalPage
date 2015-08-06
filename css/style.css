@@ -5,7 +5,7 @@
 }
 
 #blinker {
-    width: 2.5px;
+    width: 2px;
     height: 20px;
     display: inline-block;
     margin-top: 15px;
@@ -83,8 +83,27 @@
     font-size: 30px;   
 }
 
-h4 {
-    
+.rotater {
+    -webkit-animation-name: rotate;
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-delay: 1s;
+    animation-name: rotate;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-delay: 1s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+/* Standard syntax */
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
 }
 
 #contacthead {

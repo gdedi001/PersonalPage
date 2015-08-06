@@ -12,7 +12,30 @@
         <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
         <link href="css/style.css" rel="stylesheet">
     </head>
-    
+    <!--<style>
+        .rotater {
+            -webkit-animation-name: rotate;
+            -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+            -webkit-animation-iteration-count: 1;
+            -webkit-animation-delay: 1s;
+            animation-name: rotate;
+            animation-duration: 4s;
+            animation-iteration-count: 1;
+            animation-delay: 1s;
+        }
+
+        /* Chrome, Safari, Opera */
+        @-webkit-keyframes rotate {
+            from {transform: rotate(0deg);}
+            to {transform: rotate(360deg);}
+        }
+
+        /* Standard syntax */
+        @keyframes rotate {
+            from {transform: rotate(0deg);}
+            to {transform: rotate(360deg);}
+        }
+    </style>-->
     <body data-spy="scroll" data-target=".navbar" data-offset="20">
         
         <!-- Navbar (inverse color, fixed at top of page -->
@@ -55,7 +78,7 @@
                     
                 </div>
                 <div class="col-md-4 well">
-                    <i class="glyphicon glyphicon-ok-circle gly-about"></i>
+                    <div class="checked"><i class="glyphicon glyphicon-ok-circle gly-about"></i></div>
                     <h4>Full-stack Web Dev</h4>
                     <p>With an interest in JavaScript at an all time high, my long-term goals are to become familiar with the broader spectrum of web development. I will soon delve into Node.js thus allowing me to begin my journey with the <a href="http://mean.io/#!/" target="_blank">MEAN</a> stack.</p>
                 
