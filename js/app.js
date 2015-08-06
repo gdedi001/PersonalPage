@@ -2,9 +2,10 @@
 function magnify() {
                         // Takes 300 milliseconds to complete
     $(this).find("i").animate({fontSize: "50px"}, 300);
-    if ($("i").hasClass("checked"))
+    
+    if ($("i").closest("div").hasClass("checked"))
     {
-        $(this).addClass("rotater");
+        $(this).find(".checked").addClass("rotater");
     }
 }
 // Create minify function 
