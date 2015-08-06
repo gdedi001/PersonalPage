@@ -15,7 +15,7 @@ function minify() {
     
     if ($("i").closest("div").hasClass("checked"))
     {
-        $(this).find(".checked").removeClass("rotater");
+        $(this).find(".checked").removeClass("rotater"); // Once the users removes the mouse remove the rotater class so that it can be repeated upon user request.
     }
 }
 // Once the DOM has been loaded, we will listen for the DOM "I'm ready" event.
