@@ -5,17 +5,17 @@
 }
 
 #blinker {
-    width: 2px;
-    height: 20px;
+    width: 3px;
+    height: 50px;
     display: inline-block;
     margin-top: 15px;
-    margin-left: -10px;
+    margin-left: -2px;
     background-color: none;
     -webkit-animation-name: blink; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: infinite; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: .9s; /* Chrome, Safari, Opera */
     -webkit-animation-iteration-count: infinite;
     animation-name: blink;
-    animation-duration: 0.8s;
+    animation-duration: .9s;
     animation-iteration-count: infinite;
 }
 
@@ -45,6 +45,7 @@
 }
 
 #name {
+    display: inline;
     font-family: 'Poiret One', cursive;
     font-size: 50px;
     letter-spacing: 7px;
@@ -52,14 +53,37 @@
     margin-bottom: 5%;
 }
 
+.invisible {
+    opacity: 0.0;   
+}
+
+.easeIn {
+    -webkit-animation-name: appear; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    animation-name: appear;
+    animation-duration: 4s;
+}
+
+@keyframes appear {
+    from{opacity: 0.0;}
+    to{opacity: 1;}
+}
+
+@-webkit-keyframes appear {
+    from{opacity: 0.0;}
+    to{opacity: 1;}
+}
+
 #greeting {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 20px;
+    margin-top: 45px;
+    margin-right: 1.5%; /* Best percentage to match with center of linkedIn icon */
     margin-bottom: 20px;   
 }
 
 #linkedin {
-    background-color: #1975FF;
+    background-color: #337ab7;
     border-radius: 50px;
     color: white;
     font-size: 18px;
