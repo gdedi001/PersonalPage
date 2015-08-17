@@ -1,7 +1,7 @@
 <?php
     if(isset($_POST["submit"]))
     {
-        $to = "gdedi001@fiu.edu";
+        $to = "me@gabrieldediego.com";
         $subject = "Personal Website Inquiry";
         
         // Information pulled from the form element in index.html
@@ -17,6 +17,6 @@
         
         mail($to, $subject, $body); // PHP mail() function allows you to send emails directly from a script.
         
-        include("submitted.html");
+        include("../submitted.html");
     }
 ?>
