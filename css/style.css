@@ -32,12 +32,18 @@
 }
 
 #home {
-    background: url("http://theartmad.com/wp-content/uploads/2015/02/Geometric-Wallpaper-Gray-38.jpg") no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background: url("http://theartmad.com/wp-content/uploads/2015/02/Geometric-Wallpaper-Gray-38.jpg") no-repeat center center fixed;
     background-size: cover;
     background-repeat: no-repeat;
+    -webkit-background: url("http://theartmad.com/wp-content/uploads/2015/02/Geometric-Wallpaper-Gray-38.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -webkit-background-repeat: no-repeat;
+    -moz-background: url("http://theartmad.com/wp-content/uploads/2015/02/Geometric-Wallpaper-Gray-38.jpg") no-repeat center center fixed;
+    -moz-background-size: cover;
+    -moz-background-repeat: no-repeat;
+    -o-background: url("http://theartmad.com/wp-content/uploads/2015/02/Geometric-Wallpaper-Gray-38.jpg") no-repeat center center fixed;
+    -o-background-size: cover;
+    -o-background-repeat: no-repeat;
     color: white;
     padding-top: 10%;
     padding-bottom: 10%;
@@ -60,6 +66,8 @@
 .easeIn {
     -webkit-animation-name: appear; /* Chrome, Safari, Opera */
     -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    -moz-animation-name: appear; /* Mozilla Firefox */
+    -moz-animation-duration: 4s; /* Mozilla Firefox */
     animation-name: appear;
     animation-duration: 4s;
 }
@@ -70,6 +78,11 @@
 }
 
 @-webkit-keyframes appear {
+    from{opacity: 0.0;}
+    to{opacity: 1;}
+}
+
+@-moz-keyframes appear {
     from{opacity: 0.0;}
     to{opacity: 1;}
 }
@@ -120,6 +133,12 @@
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes rotate {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(-35deg);}
+    50% {transform: rotate(30deg);}
+}
+
+@-moz-keyframes rotate {
     0% {transform: rotate(0deg);}
     25% {transform: rotate(-35deg);}
     50% {transform: rotate(30deg);}
