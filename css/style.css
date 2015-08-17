@@ -120,8 +120,9 @@
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes rotate {
-    from {transform: rotate(0deg);}
-    to {transform: rotate(360deg);}
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(-35deg);}
+    50% {transform: rotate(30deg);}
 }
 
 /* Standard syntax */
@@ -160,6 +161,40 @@ form {
 }
 
 #footer p {
-    padding-top: 3%;
-    padding-bottom: 2%;
+    padding-top: .5%;
+}
+
+/* Responsive Design Implementation Section */
+@media only screen and (max-width: 790px)
+{
+    #name {
+        font-size: 40px;   
+    }
+    
+    #blinker {
+        height: 40px;   
+    }
+    
+    #greeting {
+        font-size: 16px;   
+    }
+    
+    #linkedin {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 360px)
+{
+    #name {
+        font-size: 15px;   
+    }
+    
+    #blinker {
+        height: 15px;   
+    }
+    
+    #greeting, #linkedin {
+        font-size: 12px;   
+    }
 }
