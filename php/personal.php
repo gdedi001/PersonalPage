@@ -1,7 +1,7 @@
 <?php
     if(isset($_POST["submit"]))
     {
-        $to = "me@gabrieldediego.com";
+        $to = "gdedi001@fiu.edu";
         $subject = "Personal Website Inquiry";
         
         // Information pulled from the form element in index.html
