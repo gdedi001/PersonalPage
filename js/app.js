@@ -63,8 +63,8 @@ $(document).ready(function() {
     $(".well").on("mouseenter", magnify);
     $(".well").on("mouseleave", minify);
     
-    setTimeout(nameInterval1, 1200); // the number of milliseconds to wait before executing the code
-    setTimeout(nameInterval2, 2800); // the number of milliseconds to wait before executing the code
+    setTimeout(nameInterval1, 1500); // the number of milliseconds to wait before executing the function in first argument
+    setTimeout(nameInterval2, 3000); // the number of milliseconds to wait before executing the function in first argument
     
     // add the invisible class to both greeting and linkedin portion of greeting (this will make the opacity of both start at 0)
     $("#greeting").addClass("invisible");
@@ -73,7 +73,7 @@ $(document).ready(function() {
     setTimeout(function() {
         $("#greeting").removeClass("invisible").addClass("easeIn"); // Remove the invisible class and add easeIn class (increment opacity from 0 to 1 )
         $("#linkedin").removeClass("invisible").addClass("easeIn");
-    }, 6400); // the number of milliseconds to wait before executing the code 
+    }, 6500); // the number of milliseconds to wait before executing the code 
 });
 
 
