@@ -12,8 +12,11 @@
     margin-left: -2px;
     background-color: none;
     -webkit-animation-name: blink; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: .9s; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: .9s;
     -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: blink; /* Mozilla */
+    -moz-animation-duration: .9s; 
+    -moz-animation-iteration-count: infinite;
     animation-name: blink;
     animation-duration: .9s;
     animation-iteration-count: infinite;
@@ -21,6 +24,12 @@
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes blink {
+    from {background-color: black;}
+    to {background-color: white;}
+}
+
+/* Mozilla */
+@-moz-keyframes blink {
     from {background-color: black;}
     to {background-color: white;}
 }
@@ -205,12 +214,19 @@ form {
 
 @media only screen and (max-width: 360px)
 {
+    
+    
     #name {
-        font-size: 15px;   
+        font-size: 17px;   
     }
     
     #blinker {
-        height: 15px;   
+        height: 17px; 
+        width: 
+    }
+    
+    #greeting {
+        margin-top: 20px;   
     }
     
     #greeting, #linkedin {
