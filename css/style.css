@@ -74,24 +74,27 @@
 
 .easeIn {
     -webkit-animation-name: appear; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; 
     -moz-animation-name: appear; /* Mozilla Firefox */
-    -moz-animation-duration: 4s; /* Mozilla Firefox */
+    -moz-animation-duration: 4s; 
     animation-name: appear;
     animation-duration: 4s;
 }
 
-@keyframes appear {
-    from{opacity: 0.0;}
-    to{opacity: 1;}
-}
-
+/* Chrome, Safari, Opera */
 @-webkit-keyframes appear {
     from{opacity: 0.0;}
     to{opacity: 1;}
 }
 
+/* Mozilla */
 @-moz-keyframes appear {
+    from{opacity: 0.0;}
+    to{opacity: 1;}
+}
+
+/* Standard */
+@keyframes appear {
     from{opacity: 0.0;}
     to{opacity: 1;}
 }
@@ -109,7 +112,6 @@
     border-radius: 50px;
     color: white;
     font-size: 18px;
-   /* margin-top: 20px; */
     padding: 5px 20px;
 }
 
@@ -130,11 +132,15 @@
 }
 
 .rotater {
-    -webkit-animation-name: rotate;
-    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+    -webkit-animation-name: rotate; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 1s; 
     -webkit-animation-iteration-count: 1;
     -webkit-animation-delay: .3s;
-    animation-name: rotate;
+    -moz-animation-name: rotate; /* Mozilla */
+    -moz-animation-duration: 1s;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-delay: .3s;
+    animation-name: rotate; /* Standard */
     animation-duration: 1s;
     animation-iteration-count: 1;
     animation-delay: .4s;
@@ -147,6 +153,7 @@
     50% {transform: rotate(30deg);}
 }
 
+/* Mozilla */
 @-moz-keyframes rotate {
     0% {transform: rotate(0deg);}
     25% {transform: rotate(-35deg);}
